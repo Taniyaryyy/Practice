@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI CALCULATOR</title><link rel="stylesheet" href="BMI CAL.css">
+</head>
+<link rel="stylesheet" href="BMI CAL.css">
+<body>
+<center>
+<div>
+    <form action="none" method="post" name="bmiform">
+        <fieldset>
+            <legend>Height and Weight</legend>
+            <label for="kg">Weight (kg):</label>
+            <input type="text" name="kg" id="kg">
+            <br>
+            <label for="inches">Height (inches):</label>
+            <input type="text" name="inches" id="inches">
+            <br>
+            <button type="button" name="calculate" value="Calculate your BMI" onclick="calcBMI()">Calculate your BMI</button>
+        </fieldset>
+        <fieldset>
+            <legend>BMI</legend>
+            <label for="bmi" id="bmi_label">Your calculated BMI is:</label>
+            <input type="text" name="bmi" id="bmi" readonly="readonly">
+        </fieldset>
+    </form>
+</div>
+<script>
+    function calcBMI() {
+        var weight = document.bmiform.kg.value, height = document.bmiform.inches.value;
+        document.bmiform.bmi.value = parseInt((weight * 703) / (height * height));
+    }
+</script>
+</center>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+fieldset {
+    width: 380px;
+    margin: 35px 0 0 50px;
+    border: 3px solid #1f1d1d;
+    box-shadow: 1px 1px #cccccc;
+    padding: 20px;
+}
+
+label {
+    float: left;
+    width: 150px;
+    display: block;
+    clear: left;
+    text-align: left;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+button {
+    margin-left: 160px;
+}
+
+input {
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+    width: 130px;
+}
+
+#bmi_label {
+    width: 180px;
+}
+
+#bmi {
+    width: 100px;
+}
+
